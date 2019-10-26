@@ -1,0 +1,40 @@
+head,body{
+    background-color: #FFEFB3;
+}
+#buttonViewAnimals{
+    padding: 0;
+}
+#buttonViewAnimals  li{
+    display: block;
+}
+ul{
+    list-style-type: none;
+}
+#buttonViewAnimals  li a {
+    display: block;
+    font-family: "Ancizar Sans";
+    font-size: 11px;
+    background-color: #CC7ACC;
+    color: white;
+    border: solid 1px black;
+}
+.titulo{
+    background-color: darkcyan;
+    color: white ;
+    border: solid 1px black;
+    font-size: 30px;
+    padding-top: 10%;
+
+}
+.container {
+    float: right;
+    alignment: right;
+    border: solid 1px black;
+    width: 11em;
+}
+.menu{
+    float: left;
+    border: solid 1px black;
+    width: 11em;
+
+}
