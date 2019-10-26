@@ -1,40 +1,88 @@
-head,body{
-    background-color: #FFEFB3;
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    color: #666;
+    background: #F6F6F6;
 }
 #buttonViewAnimals{
-    padding: 0;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-#buttonViewAnimals  li{
+
+#buttonViewAnimals   a {
+    background-color: darkseagreen;
     display: block;
-}
-ul{
-    list-style-type: none;
-}
-#buttonViewAnimals  li a {
-    display: block;
-    font-family: "Ancizar Sans";
+    padding: 12px;
+    font-family: "Arial";
     font-size: 11px;
-    background-color: #CC7ACC;
     color: white;
-    border: solid 1px black;
-}
-.titulo{
-    background-color: darkcyan;
-    color: white ;
-    border: solid 1px black;
-    font-size: 30px;
-    padding-top: 10%;
 
 }
 .container {
-    float: right;
-    alignment: right;
+    display: grid;
+    width: 100%;
+    height: auto;
     border: solid 1px black;
-    width: 11em;
+
 }
-.menu{
+.title{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    background-color: white;
+    color: black;
+
+    font-size: 30px;
+}
+
+.menu {
+    grid-column: 1;
+    grid-row: auto;
+    margin-right: 1%;
+    margin-left: 1%;
+    display: block;
+    float: inside;
+    width: 100%;
+
+}
+.contenido{
+    grid-column: 2/4;
+    grid-row: auto;
+    width: 550px;
     float: left;
-    border: solid 1px black;
-    width: 11em;
+
+    padding: 0 10px;
+
+}
+#root{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+img {
+   position: relative;
+    margin-top: 0%;
+    display: block;
+    width: 150px;
+    height: 100px;
+}
+p{
+
+    position: relative;
+    margin: 0%;
+
+
+}
+.card{
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
 
 }
