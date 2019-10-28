@@ -1,88 +1,228 @@
-html {
+html{
+    height: 100%;
+}
+
+body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Dosis', sans-serif;
-    line-height: 1.6;
     color: #666;
     background: #F6F6F6;
+
+
 }
 #buttonViewAnimals{
+    align-content: center;
     padding-top: 20%;
     padding-left: 10%;
     padding-right: 10%;
 }
-
-#buttonViewAnimals   a {
-    background-color: darkseagreen;
-    display: block;
-    padding: 12px;
-    font-family: "Arial";
-    font-size: 11px;
-    color: white;
-
+a{
+    text-decoration: none;
 }
-.container {
-    display: grid;
-    width: 100%;
-    height: auto;
-    border: solid 1px black;
+.container a{
 
-}
-.title{
-    position: relative;
     width: auto;
     height: auto;
-    margin-top: 1%;
     margin-left: 3%;
     margin-right: 3%;
     margin-bottom: 1%;
     background-color: white;
-    color: black;
-
-    font-size: 30px;
+    color: #CCE3BF;
+    font-size: 150%;
+    text-decoration: none;
+    font-family: "Ancizar Sans Extrablack";
+}
+.container a :hover{
+    color: white;
+    text-decoration: none;
 }
 
-.menu {
-    grid-column: 1;
-    grid-row: auto;
-    margin-right: 1%;
-    margin-left: 1%;
-    display: block;
-    float: inside;
-    width: 100%;
+li a {
+    align-content: center;
+    color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
 
+}
+li a:hover {
+    background-color: #7E966F;
+    color: white;
+}
+.title{
+
+    width: auto;
+    height: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    background-color: white;
+    color: #CCE3BF;
+    font-size: 400%;
+    text-decoration: none;
+    font-family: "Ancizar Sans Extrablack";
+}
+
+.menu{
+
+}
+.nav-item{
+    width: 100%;
+    text-align: center;
+    justify-content:center;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+.nav-link{
+    justify-content:center;
+    width: 100%;
+}
+.contenidoAnimal{
+    background-color: #CCE3BF;
+    background-size: auto;
+    float: left;
+    justify-content:center;
+    text-align: center;
+    padding: 0 40px ;
+    display: block;
+    padding-right: 0.5em;
 }
 .contenido{
-    grid-column: 2/4;
-    grid-row: auto;
-    width: 550px;
-    float: left;
 
+    background-size: cover;
+    float: left;
+    display: block;
     padding: 0 10px;
+}
+
+.contenido img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
 
 }
+.contenido h2{
+    height: 100%;
+    background-color: #CCE3BF;
+    font-family: "Ancizar Sans" ;
+    font-style: normal;
+    text-align: center;
+    padding: 100px;
+}
+
+.contenido p{
+    display: block;
+    margin: 0%;
+    text-align: left;
+    float: left;
+}
+
 #root{
     max-width: 1200px;
     margin: 0 auto;
-
 }
+
 img {
-   position: relative;
+    display: inline-block;
     margin-top: 0%;
-    display: block;
-    width: 150px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
 }
 p{
-
-    position: relative;
+    display: block;
     margin: 0%;
-
-
+    text-align: left;
+    float: left;
 }
-.card{
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.card {
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
+    justify-content:center;
+    margin: 1em;
 
 }
+.card img{
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    justify-content:center;
+}
+.card p{
+    display: inline-block;
+    margin: 0%;
+    text-align: left;
+    float: left;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+
+
+
+
+/* --------Formulario-----------------*/
+
+label{
+    text-align: left;
+    width: 100%;
+    display: block;
+}
+
+.form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin:0 20px 0 5px ;
+}
+input[type=text] {
+    width: 100%;
+    border: 1px dotted #999;
+    border-radius: 0;
+    -webkit-appearance: none;
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #CCE3BF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=file] {
+
+    border: 1px dotted #999;
+    border-radius: 0;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.footer{
+    clear:both;
+    margin-bottom: 0%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+

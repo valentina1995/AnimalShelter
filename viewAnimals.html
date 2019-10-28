@@ -1,40 +1,60 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Super Pets</title>
     <link rel = "stylesheet" href="style.css" ></link>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="images/super.png">
 </head>
-<body >
-<div class="title">
-    Super Pets
+<body onload="viewAnimal();">
+
+<div class="container title">
+
+    <div class="row" >
+        <div class="col-md-10">
+            <a href="index.html">Super Pets</a>
+        </div>
+        <div class="col-md-2 img-fluid">
+            <img src="images/super.png" >
+        </div>
+    </div>
+
 </div>
 
-<div class="container">
-    <div class="menu" >
+<div class="container-fluid">
 
-        <div id = "buttonViewAnimals">
-            <a href='viewAnimals.html'>Adopt a friend</a>
-            <a href='uploadProfile.html'>Seek a loving family</a>
+    <div class="row " >
+        <div class="col-md-4">
+            <div class="nav flex-column menu">
+                <li class="nav-item buttonViewAnimals">
+                    <a class="nav-link" href="viewAnimals.html">Adopt a friend</a>
+                </li>
+                <li class="nav-item buttonViewAnimals ">
+                    <a class="nav-link" href="uploadProfile.html">Seek a loving family</a>
+                </li>
+
+            </div>
         </div>
-
-
-    </div>
-    <div class="contenido" >
-
-        <div  id ="root">
+        <div class="col-md-8 contenidoAnimal">
+            <div class="imagenCard" id="row">
+                <div  id ="root">
+                </div>
+            </div>
 
         </div>
-
-
-
-
-
     </div>
 </div>
+
 
 </body>
 <script src ="script.js"></script>
+<footer class="page-footer font-small blue footer">
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> SuperPets.com</a>
+    </div>
+
+</footer>
 </html>
